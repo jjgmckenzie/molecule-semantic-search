@@ -1,5 +1,14 @@
 # Working with Molecule Semantic Search Repository
 
+## Setup `git`
+If you have already setup your git identity, then you can skip this.
+
+Run the following commands to configure your identity. Replace the username and email with your own.
+```
+git config --global user.name "firstname lastname"
+git config --global user.email "youremail@domain.com"
+```
+
 ## Setup SSH Key For Your GitHub Account
 
 ### MacOS
