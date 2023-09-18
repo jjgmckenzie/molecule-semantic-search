@@ -9,32 +9,7 @@ git config --global user.name "firstname lastname"
 git config --global user.email "youremail@domain.com"
 ```
 
-## Setup SSH Key For Your GitHub Account
-
-### MacOS
-
-1. **Open Terminal**
-2. **Generate SSH Key**: Generate a new SSH key by running the following command. Replace `your_email@example.com` with your GitHub email.
-    ```bash
-    EMAIL="your_email@example.com"
-    ssh-keygen -t rsa -b 4096 -C $EMAIL
-    ```
-3. **Save SSH Key**: When prompted to enter a file to save the key, press Enter to accept the default file location.
-4. **Add SSH Key to SSH-Agent**: Start the SSH agent and add your key to it.
-    ```bash
-    eval "$(ssh-agent -s)"
-    ssh-add -K ~/.ssh/id_rsa
-    ```
-5. **Copy SSH Key to Clipboard**: Run the following command to copy the public SSH key to your clipboard.
-    ```bash
-    pbcopy < ~/.ssh/id_rsa.pub
-    ```
-6. **Add SSH Key to GitHub Account**: 
-    - Go to GitHub and log into your account.
-    - Click on your profile picture -> Settings -> SSH and GPG keys.
-    - Click on the "New SSH key" button and paste your copied public SSH key into the "Key" field.
-
-### Ubuntu Linux
+## Setup SSH Key For Your GitHub Account on Ubuntu Linux
 
 1. **Open Terminal**
 2. **Generate SSH Key**: Generate a new SSH key by running the following command. Replace `your_email@example.com` with your GitHub email.
