@@ -3,7 +3,7 @@
 # toby@indieagi.org
 
 # Source common functions that start with _
-source $JUPYTERLAB_SCRIPT_DIR/common-functions.sh
+source $JUPYTERLAB_SCRIPT_DIR/../common-functions.sh
 
 # --- Main Script Starts Here ---
 
