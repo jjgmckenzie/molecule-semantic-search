@@ -8,6 +8,11 @@ function _pretty_print {
   echo -e "${msg_prefix}${msg}${ansi_reset}"
 }
 
+function _pretty_print_info {
+  local msg=$1
+  echo -e "${msg_prefix_info}${msg}${ansi_reset}"
+}
+
 function _pretty_print_success {
   local msg=$1
   echo -e "${msg_prefix_success}${msg}${ansi_reset}"
@@ -103,4 +108,5 @@ _install_python_package_to_system() {
 msg_prefix="\e[31m$0 >>> "
 msg_prefix_success="\e[32m$0 >>> "  # green
 msg_prefix_failure="\e[31m$0 >>> "  # red
+msg_prefix_info="\e[34m$0 >>> "     # blue
 ansi_reset="\e[0m"

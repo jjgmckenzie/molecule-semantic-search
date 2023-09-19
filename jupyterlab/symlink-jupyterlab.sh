@@ -28,12 +28,17 @@ fi
 
 # Add ~/bin to PATH in .zshrc
 if [[ ":$PATH:" == *":$HOME/bin:"* ]]; then
-    _pretty_print_success "Directory ~/bin is already in PATH."
+    _pretty_print_info "Directory ~/bin is already in PATH."
   else
     # Append the directory to the PATH in the .zshrc file
     echo "export PATH=\"\$PATH:$HOME/bin\"" >> ~/.zshrc
-    _pretty_print_success "Directory $HOME/bin added to PATH in ~/.zshrc"
+    _pretty_print_info "Directory $HOME/bin added to PATH in ~/.zshrc"
 fi
 # Source the .zshrc file to apply changes immediately
 source ~/.zshrc
+if [ -f ~/bin/jupyterlab ]; then
+  _pretty_print_info "deleting old symlink"
+  rm ~/bin/jupyterlab
+fi
 ln -s "$(pwd)/start-jupyterlab.sh" ~/bin/jupyterlab
+_pretty_print_success "jupyterlab command created successfully"

@@ -8,12 +8,15 @@ TODO: Further information, documentation, and explanation of project.
 1. As your first pull request, both to validate you have setup your development environment correctly, as well as to make further pull requests, add your name to the bottom of [CONTRIBUTOR-AGREEMENT.md](CONTRIBUTOR-AGREEMENT.md)
 
 ## Project Directory Structure
-```molecule-semantic-search/
-├── linux-config/
-│ ├── install-all.sh
+```
+molecule-semantic-search/       
+├── linux-config/               # Contains all linux configuration scripts for a uniform development environment
+│ ├── install-all.sh            # Script which runs all other scripts in this directory
 │ └── ...
-├── jupyterlab/
-│ ├── symlink-jupyterlab.sh
+├── jupyterlab/                 # Jupyterlab configuration & setup scripts
+│ ├── symlink-jupyterlab.sh     # Installs 'jupyterlab' which runs jupyter lab in open directory
 │ └── ...
 ├── README.md
+├── CONTRIBUTING.md             # Instructions for contributing to the project and setting up dev environment
+├── CONTRIBUTOR-AGREEMENT.md    # Agreement required for contributing to the project 
 └── ...```

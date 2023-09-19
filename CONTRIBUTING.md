@@ -101,6 +101,14 @@ cd ~/src/valuestreamai/molecule-semantic-search/linux-config
 chmod +x *.sh
 ./install-all.sh
 ```
+
+### Setting zsh as Default Shell
+
+```sh
+sudo chsh -s $(which zsh) 
+```
+Log out and then Log back in for these changes to take effect.
+
 ### Set up Jupyter Lab
 Jupyter Lab is the official development environment. 
 ```
@@ -108,4 +116,4 @@ cd ~/src/valuestreamai/molecule-semantic-search/jupyterlab
 chmod +x *.sh
 ./symlink-jupyterlab.sh
 ```
-You can now use the jupyterlab command in any directory
+You can now use the jupyterlab command in a directory to open it in JupyterLab
