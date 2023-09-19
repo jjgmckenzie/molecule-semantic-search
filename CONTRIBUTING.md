@@ -1,5 +1,12 @@
 # Contributing to Molecule Semantic Search Repository
 
+## Setup Ubuntu Linux
+```
+cd ~/src/valuestreamai/molecule-semantic-search/linux-config
+chmod +x *.sh
+./install-all.sh
+```
+
 ## Setup `git`
 If you have already setup your git identity, then you can skip this.
 
