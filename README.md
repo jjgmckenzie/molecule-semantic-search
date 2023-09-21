@@ -16,7 +16,12 @@ molecule-semantic-search/
 ├── jupyterlab/                 # Jupyterlab configuration & setup scripts
 │ ├── symlink-jupyterlab.sh     # Installs 'jupyterlab' which runs jupyter lab in open directory
 │ └── ...
-├── README.md
+├── jupyter-notebooks/          # Contains all Jupyter Notebooks for the project 
+│ ├── templates/                # Contains boilerplate and jupyter notebook templates
+│ │ └── ...
+│ └── ...
 ├── CONTRIBUTING.md             # Instructions for contributing to the project and setting up dev environment
 ├── CONTRIBUTOR-AGREEMENT.md    # Agreement required for contributing to the project 
-└── ...```
+├── README.md
+└── ...
+```
