@@ -1,12 +1,5 @@
 # Contributing to Molecule Semantic Search Repository
 
-## Setup Ubuntu Linux
-```
-cd ~/src/valuestreamai/molecule-semantic-search/linux-config
-chmod +x *.sh
-./install-all.sh
-```
-
 ## Setup `git`
 If you have already setup your git identity, then you can skip this.
 
@@ -100,3 +93,27 @@ To request an approval, tag Toby and James in the [LinkedIn Group Chat](https://
 
 By following these instructions, you're adhering to the repository's policy of using pull requests to make all changes, ensuring code quality and maintainability.
 
+## Setup Development Environment
+
+### Install Programs
+```
+cd ~/src/valuestreamai/molecule-semantic-search/linux-config
+chmod +x *.sh
+./install-all.sh
+```
+
+### Setting zsh as Default Shell
+
+```sh
+sudo chsh -s $(which zsh) 
+```
+Log out and then Log back in for these changes to take effect.
+
+### Set up Jupyter Lab
+Jupyter Lab is the official development environment. 
+```
+cd ~/src/valuestreamai/molecule-semantic-search/jupyterlab
+chmod +x *.sh
+./symlink-jupyterlab.sh
+```
+You can now use the jupyterlab command in a directory to open it in JupyterLab
