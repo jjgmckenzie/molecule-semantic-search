@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+import os
 from langchain import HuggingFaceHub
 
 from langchain import LLMChain, PromptTemplate
@@ -8,8 +10,9 @@ def llama2(prompt):
     llama2_model = HuggingFaceHub(
     huggingfacehub_api_token = os.getenv('HUGGINGFACE_API_TOKEN'),
     repo_id="meta-llama/Llama-2-7b-hf",
+        # temperature must be strictly positive, hence very small positive float
     model_kwargs={
-        "temperature":0,
+        "do_sample":False,
         "max_new_tokens":4000 # 
         }
     )
