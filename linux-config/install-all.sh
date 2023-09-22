@@ -18,6 +18,7 @@ source ../common-functions.sh
 
 
 ./install-meld.sh # graphical difftool
+./config-meld-default-git-difftool.sh
 ./install-obs.sh
 ./install-vlc.sh
 ./install-ghostwriter.sh

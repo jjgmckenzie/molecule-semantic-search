@@ -115,5 +115,6 @@ Jupyter Lab is the official development environment.
 cd ~/src/valuestreamai/molecule-semantic-search/jupyterlab
 chmod +x *.sh
 ./symlink-jupyterlab.sh
+exec zsh  # restarts zsh
 ```
 You can now use the jupyterlab command in a directory to open it in JupyterLab
